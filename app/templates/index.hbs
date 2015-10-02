@@ -1,11 +1,17 @@
 {{outlet}}
 
-{{new-question createQuestion="createQuestion"}}
+<div class="button">
+  {{new-question createQuestion="createQuestion"}}
+</div>
 
 <br><br>
 
 <ul>
   {{#each model as |question|}}
-    <li>{{#link-to 'question' question.id}}{{question.title}}{{/link-to}} posted by {{question.author}}</li>
+    <li id="question">
+      <h2>{{#link-to 'question' question.id}}{{question.title}}{{/link-to}}</h2>
+       posted by
+      <h3>{{question.author}}</h3>
+    </li>
   {{/each}}
 </ul>

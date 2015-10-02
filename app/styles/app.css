@@ -1,0 +1,36 @@
+li #question {
+  display: inline;
+}
+
+.button {
+  text-align: center;
+}
+
+#question-title {
+  text-align: center;
+}
+
+.jumbotron {
+  background-color: navy;
+  color: white;
+  text-align: center;
+}
+
+body {
+  background-color: steelblue;
+  color: white;
+}
+
+a {
+  color:lightpink;
+}
+
+a:hover {
+  color: pink;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:visited {
+  color: navy;
+}

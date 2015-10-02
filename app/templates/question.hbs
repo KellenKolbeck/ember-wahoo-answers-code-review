@@ -1,6 +1,7 @@
-{{outlet}}
+
+
 <div id="question-header">
-  <h3>{{model.author}} posted a question:</h3>
+  <h3>{{model.author}} posted a question: {{update-question question=model updateQuestion="updateQuestion"}}</h3>
 </div>
 
 <div id="question-title">
@@ -13,4 +14,6 @@
     <h5>Here are some additional notes about my question:</h5>
     <p>{{model.notes}}</p>
 
+<br>
+<button class="btn btn-danger" {{action 'deleteQuestion' model}}>Delete</button>
 </div>
