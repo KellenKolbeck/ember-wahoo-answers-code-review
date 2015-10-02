@@ -1,0 +1,26 @@
+<br>
+
+<center><h2>Answers:</h2></center>
+<br>
+<div id="new-answer">
+  {{#if newAnswerForm}}
+  <form class="form-group">
+    <div id="new-answer-container">
+      <label for="title">Title</label>
+      {{input type="text" name="title" value=title placeholder="In regards to your question about the moon" class="form-control"}}
+      <br>
+      <label for="author">What is your name?</label>
+      {{input type="text" name="author" value=author placeholder="Chevy Chase" class="form-control"}}
+      <br>
+      <label for="body">What is your answer to the question above?</label>
+      {{input type="text" name="body" value=notes placeholder="The moon is in fact made of cheese." class="form-control"}}
+
+      <br><br>
+      <button type="submit" class="btn btn-primary" {{action 'newAnswer'}}>Post your answer!</button>
+
+    </div>
+  </form>
+  {{else}}
+  <button class="btn btn-primary"{{action 'showAnswerForm'}}>Add an answer!</button>
+  {{/if}}
+</div>
