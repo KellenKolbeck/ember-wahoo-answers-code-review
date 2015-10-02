@@ -25,15 +25,20 @@ body {
 }
 
 a {
-  color:pink;
+  color:lightpink;
+  margin: 5%;
 }
 
 a:hover {
-  color: lightpink;
+  color: pink;
   cursor: pointer;
   text-decoration: none;
 }
 
+a:visited {
+  text-decoration: underline;
+  color: lightpink;
+}
 
 
 #question-header {
