@@ -6,12 +6,8 @@
 
 <br><br>
 
-<ul>
+<div id="questions">
   {{#each model as |question|}}
-    <li id="question">
-      <h2>{{#link-to 'question' question.id}}{{question.title}}{{/link-to}}</h2>
-       posted by
-      <h3>{{question.author}}</h3>
-    </li>
+    <h2>{{#link-to 'question' question.id}}{{question.title}}{{/link-to}}</h2> posted by <h3>{{question.author}}</h3>
   {{/each}}
-</ul>
+</div>

@@ -1,5 +1,6 @@
-li #question {
-  display: inline;
+#questions {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .button {
@@ -10,10 +11,12 @@ li #question {
   text-align: center;
 }
 
+
 .jumbotron {
   background-color: navy;
   color: white;
   text-align: center;
+  height: 100%;
 }
 
 body {
@@ -22,15 +25,31 @@ body {
 }
 
 a {
-  color:lightpink;
+  color:pink;
 }
 
 a:hover {
-  color: pink;
+  color: lightpink;
   cursor: pointer;
   text-decoration: none;
 }
 
-a:visited {
-  color: navy;
+
+
+#question-header {
+  margin-left: 10%;
+}
+
+#question-notes {
+  margin-left: 10%;
+}
+
+#question-notes h5 {
+  margin-left: 5%;
+}
+
+input {
+  text-align: center;
+  max-width: 50%;
+  margin: 0 auto;
 }

@@ -1,19 +1,20 @@
 
 
 <div id="question-header">
-  <h3>{{model.author}} posted a question: {{update-question question=model updateQuestion="updateQuestion"}}</h3>
+  <h3>{{model.author}} posted a question: </h3>
 </div>
 
 <div id="question-title">
   <h2>{{model.title}}</h2>
+  {{update-question question=model updateQuestion="updateQuestion"}}
 </div>
 
-<br>
+<br><br><br>
 <div id="question-notes">
 
-    <h5>Here are some additional notes about my question:</h5>
-    <p>{{model.notes}}</p>
+  <h4>Some additional notes about my question:</h4>
+    <h5>{{model.notes}}</h5>
 
-<br>
-<button class="btn btn-danger" {{action 'deleteQuestion' model}}>Delete</button>
+<br><br>
 </div>
+<center><button class="btn btn-danger" {{action 'deleteQuestion' model}}>Delete Question</button></center>
