@@ -20,14 +20,13 @@
 
 
 <br>
-<div id="answer-button">
-  {{new-answer question=model saveAnswer='saveAnswer'}}
-</div>
-
-
+<center><h2>Answers:</h2></center>
 <div id="answers">
   {{#each model.answers as |answer|}}
     <h2>{{answer.title}} submitted by {{answer.author}}</h2>
     <h4>{{answer.body}}</h4>
   {{/each}}
+</div>
+<div id="answer-button">
+  {{new-answer question=model saveAnswer='saveAnswer'}}
 </div>
