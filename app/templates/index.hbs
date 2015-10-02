@@ -1,1 +1,11 @@
 {{outlet}}
+
+{{new-question createQuestion="createQuestion"}}
+
+<br><br>
+
+<ul>
+  {{#each model as |question|}}
+    <li>{{#link-to 'question' question.id}}{{question.title}}{{/link-to}} posted by {{question.author}}</li>
+  {{/each}}
+</ul>

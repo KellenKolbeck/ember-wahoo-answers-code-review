@@ -1,0 +1,23 @@
+{{yield}}
+
+<div id="new-question">
+  {{#if newQuestionForm}}
+  <form class="form-group">
+    <div id="new-question-container">
+      <label for="title">What question would you like to ask?</label>
+      {{input type="text" name="title" value=title placeholder="Is the moon made of cheese?" class="form-control"}}
+      <br>
+      <label for="author">What is your name?</label>
+      {{input type="text" name="author" value=author placeholder="Bill Murray" class="form-control"}}
+      <br>
+      <label for="notes">Any additional notes you would like to add?</label>
+      {{input type="text" name="notes" value=notes placeholder="Go west, young man" class="form-control"}}
+
+      <br><br>
+      <button type="submit" class="btn-btn primary" {{action 'createQuestion'}}>Post your question!</button>
+    </div>
+  </form>
+  {{else}}
+  <button {{action 'showQuestionForm'}}>Add question!</button>
+  {{/if}}
+</div>
