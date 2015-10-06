@@ -23,14 +23,15 @@
 <center><h2>Answers:</h2></center>
 <div id="answers">
   {{#each model.answers as |answer|}}
-    <h2>{{answer.title}} submitted by {{answer.author}}</h2>
-    <h4>{{answer.body}}</h4>
+    <h3>"{{answer.title}}"</h3>
+    <h4>submitted by {{answer.author}}</h4>
+    <h5>{{answer.body}}</h5>
   {{/each}}
 </div>
 <div id="answer-button">
   {{new-answer question=model saveAnswer='saveAnswer'}}
 </div>
-
+<!--
 <div id="show-answer">
   {{posted-answer answers=model.answers}}
-</div>
+</div> -->
