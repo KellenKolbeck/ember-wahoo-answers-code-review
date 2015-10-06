@@ -1,0 +1,8 @@
+{{yield}}
+
+{{answers.name}}
+
+{{#each model.answers as |answer|}}
+  <h2>{{answer.title}} submitted by {{answer.author}}</h2>
+  <h4>{{answer.body}}</h4>
+{{/each}}
