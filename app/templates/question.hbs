@@ -1,31 +1,37 @@
 
 <center><button class="btn btn-xs btn-danger" {{action 'deleteQuestion' model}}>Delete Question</button></center>
+<div id="question-display">
+  <div id="question-header">
+    <h3>{{model.author}} posted a question: </h3>
+    <h5>On: {{format-date question.created_at}}</h5>
+  </div>
+  <br>
+  <div id="question-title">
+    <h2>{{model.title}}</h2>
+    {{update-question question=model updateQuestion="updateQuestion"}}
+  </div>
 
-<div id="question-header">
-  <h3>{{model.author}} posted a question: </h3>
+  <br><br><br>
+  <div id="question-notes">
+
+    <h4>Some additional notes about my question:</h4>
+      <h5>{{model.notes}}</h5>
+
+  </div>
 </div>
-<br>
-<div id="question-title">
-  <h2>{{model.title}}</h2>
-  {{update-question question=model updateQuestion="updateQuestion"}}
-</div>
-
-<br><br><br>
-<div id="question-notes">
-
-  <h4>Some additional notes about my question:</h4>
-    <h5>{{model.notes}}</h5>
-
-</div>
 
 
-<br>
-<center><h2>Answers:</h2></center>
+<br><br>
+
+
 <div id="answers">
   {{#each model.answers as |answer|}}
-    <h3>"{{answer.title}}"</h3>
-    <h4>submitted by {{answer.author}}</h4>
+  <div id="author-time">
+    <h3>Answered by: {{answer.author}} - {{answer.title}}</h3>
+    <p>On: {{format-date question.created_at}}</p>
+  </div>
     <h5>{{answer.body}}</h5>
+    <br>
   {{/each}}
 </div>
 <div id="answer-button">

@@ -58,11 +58,11 @@ a:visited {
 
 
 #question-header {
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 #question-notes {
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 #question-notes h5 {
@@ -73,4 +73,19 @@ input {
   text-align: center;
   max-width: 50%;
   margin: 0 auto;
+}
+
+#answers #author-time {
+  margin-left: 5%;
+  text-align: left;
+  text-decoration: none;
+}
+
+#question-display {
+  border-bottom: 10px groove lightpink;
+  padding-bottom: 5%;
+}
+
+.container {
+  padding: 1.5%;
 }

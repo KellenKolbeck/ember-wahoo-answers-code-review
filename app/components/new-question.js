@@ -12,7 +12,8 @@ export default Ember.Component.extend({
       var params = {
         title: this.get('title'),
         author: this.get('author'),
-        notes: this.get('notes')
+        notes: this.get('notes'),
+        created_at: new Date()
       }
       this.set("newQuestionForm", false);
       this.sendAction('createQuestion', params);
