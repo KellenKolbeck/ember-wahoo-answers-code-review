@@ -1,8 +1,12 @@
 <div class="jumbotron">
   <img src="/img/ember.jpeg" alt="ember logo"><h1>Wahoo Answers</h1>
-  <center>{{#link-to 'index'}}Home{{/link-to}}</center>
-
 </div>
 <div class="container">
   {{outlet}}
+</div>
+
+<br><br><hr>
+
+<div id="home-link">
+  {{#link-to 'index'}}<span class="glyphicon glyphicon-home"></span>{{/link-to}}
 </div>

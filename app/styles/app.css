@@ -28,11 +28,23 @@
   background-color: navy;
   color: white;
   text-align: center;
-  max-height: 300px;
+  max-height: 250px;
+  border: 10px ridge lightpink;
+  padding: 2%;
 }
 
 .jumbotron img {
   max-height: 75px;
+}
+
+#home-link {
+  text-align: center;
+  font-size: 30px;
+}
+
+.jumbotron h1 {
+  font-size: 3em;
+  margin-bottom: 25px;
 }
 
 body {
@@ -88,4 +100,6 @@ input {
 
 .container {
   padding: 1.5%;
+  margin-top: 2%;
+  margin-bottom: 4%;
 }
